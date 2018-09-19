@@ -1,0 +1,29 @@
+{
+    "name": "santran/socket",
+    "description": "A socket implementation for Laravel 5",
+    "version": "1.0.0",
+    "require": {
+        "cboden/ratchet": "^0.4.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tran Doan San",
+            "email": "santran686@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/mrsantran/socket"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Santran\\Socket\\": "src/"
+        }
+    },
+    "post-update-cmd": [
+        "php artisan vendor:publish"
+    ]
+}
